@@ -14,3 +14,6 @@ RUN unzip /var/www/html/oxer.zip -d /var/www/html/ && \
 
 # Expose port 80
 EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["apache2ctl", "-D", "FOREGROUND"]
