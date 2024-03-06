@@ -7,9 +7,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and extract the web content
-RUN curl -L -o /var/www/html/oxer.zip https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
-RUN unzip /var/www/html/oxer.zip -d /var/www/html/ && \
-    rm /var/www/html/oxer.zip
+RUN curl -L -o /var/www/html/carvilla.zip https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
+RUN unzip /var/www/html/carvilla.zip -d /var/www/html/ && \
+    rm /var/www/html/carvilla.zip
 
 
 # Expose port 80
